@@ -20,3 +20,10 @@ Links to API informaiton:
 VirusTotal - https://support.virustotal.com/hc/en-us/articles/115002100149-API
 Shodan - https://developer.shodan.io/
 AlienVault - https://otx.alienvault.com/api
+
+
+Acknowledgements:
+ When I started out to craft this process I was able to find resources that were close to what I wanted to do but required minor tweaks to be able to work.
+ 
+ The original JS for creating the force directed graph belongs to Vasco Asturiano and can be found in https://github.com/vasturiano/3d-force-graph
+ The python used within the Jupyter notebook was discovered while digging through Austin Taylor's repos https://github.com/austin-taylor . I don't remember excalty which one, but he has a lot of cool stuff, so check him out.
