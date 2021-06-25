@@ -1,5 +1,10 @@
 # 3D_Network_Graph
 
+This repo contains all the materials needed to display the interconnections of IP addresses derived from Wireshark CSV PCAP exports. Here are the steps that I follow after downloading the report to a local directory.
+
+1) Run a capture on any interface that you would like in Wireshark. Once you believe you have enough, stop the capture and then go to File -> Export Packet Dissections -> As CSV. Name the file whatever you would like and remember the location.
+2) Start a Jupyter Notebook and upload the 
+
 
 09/08/2020
 
