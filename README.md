@@ -3,7 +3,15 @@
 This repo contains all the materials needed to display the interconnections of IP addresses derived from Wireshark CSV PCAP exports. Here are the steps that I follow after downloading the report to a local directory.
 
 1) Run a capture on any interface that you would like in Wireshark. Once you believe you have enough, stop the capture and then go to File -> Export Packet Dissections -> As CSV. Name the file whatever you would like and remember the location.
-2) Start a Jupyter Notebook and upload the 
+2) Start a Jupyter Notebook and upload the PCAP Processing for 3d Viz.ipynb and the csv file you created in the previous step.
+3) Run the notebook to generate a json file needed for the visualizations. The json file will be the same name as the csv file just with a .json extension.
+4) Edit the two html files to reference the new json file. ( .jsonUrl('wifi_pcap.json') )
+5) Now, you will need to run a local web server. I prefer the ease of python3's http.server. If you have python3 installed, navigate to the director that all the files from this repo are stored. Execute python3 -m http.server {port}. Replace {port} with a port 80, 8080 or some other random port. This will be needed to access the visualization.
+6) Once you have the server running, open your browser of choice and navigate to localhost:{port} (Make sure hardware acceleration is enabled for proper rendering.
+7) You will now be able to execute the two html files to view the graphs.
+
+      ![image](https://user-images.githubusercontent.com/49495470/123432883-dded6500-d598-11eb-96db-11a70885b1b4.png)
+
 
 
 09/08/2020
