@@ -1,0 +1,21 @@
+<head>
+  <style> body { margin: 0; } </style>
+
+  <script src="../3d-force-graph-vr.js"></script>
+</head>
+
+<body>
+  <div id="3d-graph"></div>
+
+  <script>
+    const Graph = ForceGraphVR()
+      (document.getElementById('3d-graph'))
+        .backgroundColor('black')
+        .jsonUrl('wifi_pcap.json') <!-- The name of the file you created from the Jupyter Notebook -->
+        .nodeLabel('name')
+        .nodeDesc('ip address')
+        .nodeAutoColorBy('id')
+        .nodeResolution(100)
+        .linkCurvature(.02);
+  </script>
+</body>
